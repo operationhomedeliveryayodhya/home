@@ -1,0 +1,171 @@
+@import url('http://fonts.goolgeapis.com/css?family=Ubuntu:400,500,700');
+body{
+	margin:0;
+	padding:0;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	background:#222;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+
+.container{
+	width:1200px;
+	height:auto;
+	margin: 0 auto;
+	display:grid;
+	grid-tempLate-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid:gap: 10px;
+	padding:10px;
+	box-sizing: border-box;
+	
+}
+
+.container .box {
+	position:relative;
+	background: #fff;
+	padding: 20px 40px 40px;
+	text-align: center;
+	overflow:hidden;
+	border-radius: 20px;
+}
+
+ .boxx{
+	position:relative;
+	background: #fff;
+	padding: 20px 40px 40px;
+	
+	overflow:hidden;
+	border-radius: 20px;
+}
+
+.container .box:nth-child(1){
+	background: linear-gradient(45deg, #fff, #fff);
+}
+
+.container .box:nth-child(2){
+	background: linear-gradient(45deg, #fff, #fff);
+}
+
+.container .box .sel {
+
+	margin:1%;
+	padding:10px;
+	font-size:30px;
+	color:blue;
+	z-index:1;
+	opacity: 0.4;
+	 
+	
+}
+.container .box .but {
+
+	margin:1%;
+	padding:10px;
+	font-size:30px;
+	color:#110101;
+	z-index:1;
+	opacity: 0.4;
+	 
+	
+}
+.container .box h1 {
+	position:relative;
+	margin:0;
+	padding:0;
+	font-size:60px;
+	color:#110101;
+	z-index:1;
+	opacity: 0.4;
+	
+}
+
+
+.container .box h2 {
+	position:relative;
+	margin:0;
+	padding:0;
+	font-size:45px;
+	color:#110101;
+	z-index:1;
+	
+	
+}
+
+
+
+.container .box h3 {
+	
+	margin:0;
+	padding:0;
+	font-size:30px;
+	color:#110101;
+	text-transform:uppercase;
+	
+}
+
+
+.container .box h4 {
+	
+	margin:0;
+	padding:2px;
+	font-size:18px;
+	color:#110101;
+	text-transform:uppercase;
+	font-style: italic;
+	
+}
+
+.container .box h5 {
+	
+	margin:0;
+	padding:0;
+	font-size:22px;
+	color:#110101;
+	text-transform:uppercase;
+	font-style: italic;
+	
+}
+
+.container .box h6 {
+	
+	margin:0;
+	padding:0;
+	font-size:36px;
+	color:#110101;
+	text-transform:uppercase;
+	
+}
+.container .box p {
+	margin:0;
+	padding:0;
+	font-size:18px;
+	color:#fff;
+}
+
+.blink_text {
+ animation-name: blinker;
+ animation-duration: 2s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+
+.blink_text2 {
+ animation-name: blinker;
+ animation-duration: 3s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+
+@keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+}
+
+img {
+  border-radius: 50%;
+}

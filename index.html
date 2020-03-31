@@ -1,0 +1,384 @@
+﻿<!doctype html>
+<head>
+<title>आपरेशन होम डिलीवरी/ Operation Home Delivery</title>
+
+	<script type="text/javascript" src="aman.js"></script>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+
+<script>
+
+
+function getvalue()
+{
+	
+	var checks = document.getElementsByClassName("checks");
+	var str = "";
+	for( i=0; i<3; i++)
+	{
+		if(checks[i].checked)
+		{
+			str += checks[i].value + " ";
+	
+		}
+
+	}
+
+	alert(str);
+}
+
+function getselectedvalueps()
+{
+var v=0;
+var va = document.getElementById("ps").value;
+//alert(va);
+var psarr = ["Cantt/ कैण्ट","Gosaiganj/ गोसांईगंज","Haiderganj/ हैदरगंज","Inayat Nagar/ इनायतनगर","Kotwali Ayodhya/ कोतवाली अयोध्या","Kotwali City/ कोतवाली नगर","Kotwali Bikapur/ कोतवाली बीकापुर","Kotwali Rudauli/ कोतवाली रुदौली","Kumarganj/ कुमारगंज","Maharajganj/ महाराजगंज","Mawai/ मवई","Patranga/ पटरंगा","Purakalander/ पूराकलन्दर","Raunahi/ रौनाही","RJB/ राम जन्म भूमि","Tarun/ तारुन","Khandasa/ खण्डासा"];
+ //alert(psarr[16]);
+ if (document.getElementById("village").hasChildNodes()) 
+ {
+       var list = document.getElementById("village");
+       var c = list.length-1;
+      for( var x=0; x<c; x++)
+    	{  
+     list.removeChild(list.childNodes[1]);
+     
+   		}
+		  
+ }
+
+	
+	
+	for(var p=0; p<17; p++)
+	{
+	 
+	var c = va.localeCompare(psarr[p]);
+	
+	if(c==0)
+		v=p+1;
+	}
+	
+	
+	if(v==1)
+	{
+		var select = document.getElementById("village"), arr = ["अब्बुसराय", "कोटसराय", "गद्दौपुर", "गौरा पट्टी", "घाटमपुर", "जगदीशपुर", "जमथराघाट", "ताजपुर कोडरा", "दराबगंज", "नया पुरवा", "नियावां", "पलिया शाहबदी", "फतेहपुर सरैया", "बनवीरपुर", "बेगमगंज गढैया", "भीखनपुर", "मऊयदुवंशपुर", "मशीनिया", "मिर्जाअली बाजार", "मीरनघाट", "मुमताज नगर", "रायपुर", "रेतिया", "सदर बाजार", "सहादतगंज", "हरीपुर जलालाबाद", "हसनु कटरा"
+	];
+
+
+
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+	else if(v==2)
+	{
+		var select = document.getElementById("village"), arr = ["अमसिन", "उनियार", "कस्बा गोशाईगंज", "टण्डौली", "दिलासीगंज", "पकरैला अचकवापुर", "पौसरा", "महबूबगंज भैरीपुर", "रामनगर मिश्रौली"];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+				
+
+	}
+	else if(v==3)
+	{
+		var select = document.getElementById("village"), arr = ["इमिलिया", "केरालाल खॉ", "जजवारा", "जाना", "थरियाकला", "पचगवां", "परसपुर हथिगो", "पाराराम", "बैतीकला", "बोदहरी", "भैरोपुर टिकरा", "मऊ", "मलावन", "रसूलपुर", "सराय मनोधर", "सिंहोरिया", "सिरसा नियाजपुर", "हैदरगंज"];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+	else if(v==4)
+	{
+	var select = document.getElementById("village"), arr = ["अछोरा", "अस्थना/गोरवा/गढ़ा", "आस्तीकन/डीहपूरे बीरबल", "इनायतनगर", "ईंटगांव", "कदनपुर", "कहुआ", "किनौली / सोनस", "कुचेरा", "गिरधरामऊ", "गुरौली फत्ते सिंह", "चमैला", "चिखड़ी", "टकसरा", "तारडीह उर्फ तरौली", "निमड़ी पिलाई", "पडरी", "परवर पारा", "परसपुर सथरा", "पलिया प्रताप शाह", "पलिया लोहानी", "पलियामाफी", "पाराब्रहम्नान", "मजनाई", "मलेथू बुजुर्ग", "महुलारा", "मिल्कीपुर", "मीठेगांव/रसूलपुर", "रनापुर", "रेवना", "शाहगंज मुकीमपुर पहाड़पुर/ सरसोपुर", "सरियावां / मुंगीशपुर", "सिंधौरा", "सेमरा", "सेवरा", "सोहवल सलोनी", "हिसामुद्दीनपुर", "हूसेपुर" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}	
+	}
+	
+
+	else if(v==5)
+	{
+		var select = document.getElementById("village"), arr = ["आशिफबाग", "कूढा केशवपुर", "गोलाबाजार", "चक्रतीरथ", "जयसिंहपुर", "जलवानपुरा", "जानकीघाट", "तुलसीनगर", "तुलसीबाड़ी", "दन्तधावन कुण्ड", "दर्शननगर", "नयाघाट", "पाराखान", "प्रमोद वन", "बक्सरिया टोला", "बाजार राजा हरदत्त", "बेगमपुरा", "भीखापुर", "भीखी का पुरवा / शंकरगढ बाजार", "मक्खापुर", "मीरापुर डेरा बीबी", "मुगलपुरा", "रानीबाजार", "रानोपाली", "रामघाट", "रायगंज", "रायगंज ठठराही", "रायगंज नोनहटिया", "लक्ष्मणघाट", "वासुदेवघाट", "शास्त्रीनगर", "शाहनेवाजपुर", "सप्तसागर कालोनी", "स्वर्ग द्वार"];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+else if(v==6)
+	{
+		var select = document.getElementById("village"), arr = ["अंगूरी बाग", "अडगडा", "अमानी गंज", "अश्वनीपुरम केवटहिया", "आदर्श पुरम नगर", "आनन्द विहार कालोनी", "ईदगाह कालोनी", "उसरु", "कश्मीरी मोहल्ला", "कृष्णा नगर कालोनी फतेहगंज", "कौशलपुरी कालोनी", "खीर गली फतेहगंज", "खोजनपुर", "गणेश नगर दालमन्डी", "घोसियाना", "चौक", "जनौरा", "जोगीतारा", "ठठरईया", "दीवान का पुरवा", "दुर्गापुरी गांधी नगर कालोनी", "देवकाली", "देवनगर कालोनी", "नहरबाग", "नैय्यर कालोनी", "पतियरिया", "पहाडगंज घोसियाना", "पूरे हुसैन", "बासमण्डी", "बेगमगंज मकबरा", "मानसनगर कालोनी नवीन मन्डी", "राठहवेली", "रामनगर", "रिकाबगंज", "रीडगंज", "वजीरगंज", "शिवनगर कालोनी नवीन मन्डी", "साहबगंज", "सुभाष नगर", "हमदानी कोठी", "हौसिला नगर"];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+	
+
+else if(v==7)
+	{
+		var select = document.getElementById("village"), arr = ["उमरनी पिपरी", "उमरपुर", "औहरपुर", "कटारी", "कस्बा बीकापुर", "कोछा", "खजुरहट", "गयासुद्दीनपुर", "गुन्धौर", "चाँदपुर", "चौरे चन्दौली", "जलालपुर माफी", "जासरपुर", "जेरुवा", "जैनपुर", "जोहन", "ताजपुर", "तेन्दुआ रतनपुर", "तोरोमाफी दराबगंज", "दशरथपुर", "नदौना", "नुवावा बैदरा", "पकड़ी दुर्गादासपुर", "परसुंही", "परुआ", "पातूपुर", "पुहंपी", "पूरे बजाज", "बनकट", "बबुरिहा कौधा", "बल्लीपुर", "बिलारी", "भरहूखाता", "भावापुर नेवादा", "भुलईपुर निधियावाँ", "मजरूद्दीनपुर", "मलेथूकनक", "रमऊपुर गंगापुर", "रामदासपुर मझौली", "रामनगर", "रामपुर जोहन", "रूरूखास", "लक्ष्मणपुर ग्रन्ट", "शंकरपुर", "शिवतर", "शेरपुर खपरैला", "शेरपुर पारा", "सराय भनौली", "सरायखर्गी", "सुरासराय", "सोनबरसा माफी" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+	
+
+else if(v==8)
+	{
+		var select = document.getElementById("village"), arr = ["ऐहार", "करीमपुर", "गौरियामऊ", "जमुनियामऊ", "नेवती", "परसौली", "बिकावल", "बिजडी", "भौली", "मीसा", "मो0 अकबरगंज", "मो0 कजियाना", "मो0 काजीपुरा", "मो0 ख्वाजाहाल", "मो0 नयागंज", "मो0 पूरे खान", "मो0 पूरे मलिक", "मो0 पूरेहुसैन खां", "ललुवापुर", "शुक्लापुर", "सरायमंझन"
+ ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+else if(v==9)
+	{
+		var select = document.getElementById("village"), arr = ["अकमा", "इमामगंज", "उधरनपुर", "उधुई", "उमरहर", "कुड़वा पूरे लाल खाँ", "केशवपुर चिलबिली", "खेमापुर मेवापुर", "गोकुला", "घोड़वल", "जोरियम", "देवगांव", "नरेन्द्र भादा", "पालपुर", "पिठला", "पूरा उर्फ सुमेरपुर", "बवां", "मसेढ़ा", "माझगांव", "मेवापुर H/O पहाड़पुर", "रानिकपुर", "लिलहा रसूलपुर", "सराय हेमराज", "हरदोइया" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+else if(v==10)
+	{
+		var select = document.getElementById("village"), arr = ["अरवत", "अलनाभारी", "आलापुर", "कनकपुर", "कल्याणपुर बरौली", "काजीपुर बिस्वा", "काजीपुर मांझा", "कादीपुर", "खानपुर", "खुशहालगंज", "चरेरा", "नारा", "नेवकबीरपुर", "पम्पारपुर", "पूरा बाजार", "बबुआपुर", "बेरासपुर", "मया भीखी", "मलखानपुर", , "मेदनीपुर", "रसूलाबाद", "राजेपुर", "रोशननगर बाकरगंज", "रौवा लोहंगपुर", "समन्था", "समैसा", "सरायरासी", "हैंसा" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+else if(v==11)
+	{
+		var select = document.getElementById("village"), arr = ["अमराईगांव", "उमापुर", "करौदी", "कसारी", "कामापुर", "चन्द्रामऊ बैरम", "चन्द्रामऊ रसीदपट्टी", "जैसुखपुर", "तालगांव", "दुल्लापुर", "देवईत", "द्वारिकापुर", "नरौली", "नेवरा", "नेवाजपुर", "नौगवाडीह", "बट्टैया", "बड़ेला", "बरौली", "बिहारा", "बीबीपुर", "भटमऊ नरायनपुर", "भवानीपुर", "मत्था नेवादा", "मवई गांव", "महमूदपुर", "मीरमऊ", "मोहम्मदपुर दाउदपुर", "रतनपुर", "रसूलपुर नेवदा", "रामपुर जनक", "लखनीपुर", "लोधौरा", "लोहटी सरैया", "शेरपुर", "सुनबा", "सैदपुर", "सैमसी", "हंसराजपुर" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+
+
+else if(v==12)
+	{
+		var select = document.getElementById("village"), arr = ["खण्डपिपरा", "गनौली", "जखौली", "जरायलकला", "पुराय", "पैगम्बर नगर", "बसौढी", "मखदूमपुर", "मटौली", "रानीमऊ", "वाजिदपुर", "सराय अहमद", "सरैठा", "सिठौली", "सीवन", "होलूपुर" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+
+	else if(v==13)
+	{
+		var select = document.getElementById("village"), arr = ["अंजना", "अकवारा", "अमौना", "अलावलपुर", "करमा कोडरी", "खानपुर मसौधा", "गंगौली", "चांदपुर हरिवंश", "छतिरवा", "ददेरा / किशुनदासपुर", "दौलतपुर", "पलिया रिसाली", "भदरसा", "सथरी रानीबाजार", "सरियावां", "सूखापुर इटौरा" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+
+	else if(v==14)
+	{
+		var select = document.getElementById("village"), arr = ["अरकुना", "इस्माइल नगर", "कटरौली", "कुन्दुर्खा खुर्द", "खिरौनी", "गौरा ब्रह्नान", "डेलुवाभारी", "तहसीनपुर", "देवई", "देवराकोट", "बडागांव", "बभनियावां", "भवनियापुर", "मगलसी", "महोली", "रौनाही", "शेखपुर जाफर", "सरायनामू", "साल्हेपुर निमैचा", "सोहावल", "हाजीपुर बरसेण्डी" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+
+	else if(v==15)
+	{
+		var select = document.getElementById("village"), arr = ["आलमगंज कटरा", "कजियाना", "कन्धरपुर गोडियाना", "कोटिया", "चक्रतीर्थ", "टेढ़ी बाजार", "बरबारी टोला", "मछुबाना", "मीरापुर बुलन्दी", "मुराई टोला", "रामकोट", "वशिष्ठ कुण्ड", "सुतहटी" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+
+
+
+	else if(v==16)
+	{
+		var select = document.getElementById("village"), arr = ["ककोली", "कल्याणपुर छितौना", "केशरुआ बुजुर्ग", "गयासपुर", "चरावां", "टिकरी", "तारुन", "नसरतपुर", "नेतवारी चतुरपुर", "बालापुर", "बाहरपुर", "बेनीगदद्दोपुर", "मीतनपुर", "मुंगीशपुर", "रामपुर भगन", "हुसैनपुर" ];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+	else if(v==17)
+	{
+		var select = document.getElementById("village"), arr = ["अजरौली", "अड़बड़ सरैया", "अमावासूफी", "किन्हूपुर", "कुरावन", "कोटिया", "खण्डासा", "गद्दोपुर", "घटौली", "जगदीशपुर", "जयराजपुर", "डीली सरैया", "डूडी", "मंझनपुर", "मितौरा", "मोहम्मदपुर", "रायपट्टी", "सतनापुर"];
+		for(var i=0; i<arr.length; i++)
+		{
+			var option = document.createElement("OPTION"), txt=document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		}
+	}
+
+	else
+	{
+		alert("Choose Option");
+	}
+
+
+}
+
+</script>
+</head>
+
+
+<body>
+<div class="container">
+	
+	<div class="box">
+	<center><img height="70px" width="70px" src="https://pbs.twimg.com/profile_images/1017013800933838849/BxwjpDlt_400x400.jpg"></img></center>
+	<h3><font color="red">Ayodhya Police</font></h3>
+	<h4><font color="blue">#AyodhyaFights Corona</font></h4>
+	<br>
+	<h4><strong>DM Control Room ,Ayodhya <br>
+	+91 9453116001,+91 8181828981</strong></h4>
+
+<p>
+Helpline Email ID : ncov2019@gov.in
+<br>
+</p>
+<br>
+
+<a href="https://www.mohfw.gov.in/pdf/SOPforqurantine.pdf"/><font color="blue"><strong><span class="blink_text2">राज्यों में कोरोना वायरस से सम्बन्धित दिशा निर्देश जानें</span></strong></font></a>
+<br><br>
+<a href="https://twitter.com/ayodhya_police/status/1243956062811643907/photo/1"/><font color="red"><strong><span class="blink_text">सहायता के लिए जारी अयोध्या पुलिस के अधिकारियों, थाना/चौकी प्रभारियों के नाम व नम्बर </span></strong></font></a>
+	<div class="boxx">
+
+<strong> जनपद अयोध्या मे लाक डाउन के चलते जो आप लोगों को रोजमर्रा की दिनचर्या में सामान, राशन, दूध, दवा आदि खरीदने में  जो परेशानी का 
+सामना करना पड रहा है, अतः जनपद अयोध्या में आप लोगों को आपके निकट जो दुकानदार, दुग्ध वाले तथा राशन की दुकानें है, उनका विवरण तथा कान्टेक्ट नम्बर उपलब्ध कराने का प्रयास 
+किया जा रहा है,<br> जिसे आप आगे अथवा नीचे बने डैशबोर्ड से अपने थाने का नाम, निकट का गांव / मोहल्ला भर कर उक्त दुकानदारों की सूची देखे उनसे जरिए दूरभाष सम्पर्क कर सकते हैं। हर नम्बर के साथ एक पुलिस कर्मी का नाम व मोबाइल नम्बर भी दिया गया है, जिसपर किसी भी प्रकार की कोई समस्या हो तो बात कर सकते हैं। </strong>
+
+
+	
+	</div>
+	
+	</div>
+	<div class="box">
+	<h3><font color="black"><strong>होम डिलीवरी हेतु दुकान खोज</strong></font></h3><br><br><br>
+	<h3>अपना थाना/कोतवाली चुनें।</h3>
+	
+	<select class="sel" id="ps" onchange="getselectedvalueps();">
+<option value="0"> -- SELECT POLICE STATION -- </option>
+<option value="Cantt/ कैण्ट"> थाना कैण्ट </option>
+<option value="Gosaiganj/ गोसांईगंज"> थाना गोसांईगंज </option>
+<option value="Haiderganj/ हैदरगंज"> थाना हैदरगंज </option>
+<option value="Inayat Nagar/ इनायतनगर"> थाना इनायतनगर </option>
+<option value="Kotwali Ayodhya/ कोतवाली अयोध्या"> कोतवाली अयोध्या </option>
+<option value="Kotwali City/ कोतवाली नगर"> कोतवाली नगर </option>
+<option value="Kotwali Bikapur/ कोतवाली बीकापुर"> कोतवाली बीकापुर </option>
+<option value="Kotwali Rudauli/ कोतवाली रुदौली"> कोतवाली रुदौली </option>
+<option value="Kumarganj/ कुमारगंज"> थाना कुमारगंज </option>
+<option value="Maharajganj/ महाराजगंज"> थाना महाराजगंज </option>
+<option value="Mawai/ मवई"> थाना मवई </option>
+<option value="Patranga/ पटरंगा"> थाना पटरंगा </option>
+<option value="Purakalander/ पूराकलन्दर"> थाना पूराकलन्दर </option>
+<option value="Raunahi/ रौनाही"> थाना रौनाही </option>
+<option value="RJB/ राम जन्म भूमि"> थाना राम जन्म भूमि </option>
+<option value="Tarun/ तारुन"> थाना तारुन </option>
+<option value="Khandasa/ खण्डासा"> थाना खण्डासा </option>
+</select>
+	
+	
+
+	<h3>अपना निकटतम गांव/ मोहल्ला चुनें</h3>
+	
+	<select class="sel" id="village" > <option value="0">-- Select Village/ Mohalla --</option></select>
+	<h5>सर्च बटन पर क्लिक करें अथवा खोजें बटन दबायें</h5>
+	<input type="button" onclick="getrec();" class="but" id="upload" value="खोंजें / Search" />
+	<br>
+	<div class="boxx">
+
+<h6> <font color="red">जागरूक रहें, सुरक्षित रहें। </font></h6>
+<h3 ><font color="blue"><strong>स्मार्ट सेल, जनपद अयोध्या</strong></font></h3>
+
+
+	
+	</div>
+	
+	</div>
+	
+	
+</div>
+
+
+</body>
+
+</html>

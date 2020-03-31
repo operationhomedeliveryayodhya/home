@@ -31,7 +31,7 @@ function getrec()
 var ps = document.getElementById("ps").value;
 var vill = document.getElementById("village").value;
 alert ("आपने चुना है,  थाना: "+ps+ "तथा गांव :  "+vill);
-var ht = "<html lang='en'><head><title>आपरेशन होम डिलीवरी/ Operation Home Delivery</title><link = rel=='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel='stylesheet' href='style.css'></head><body><div class='pricing-area'><div class='container'><div class='row'><div class='col-sm-12'><div class='section-header text-center'><center><h2><a href='https://smartcellayodhya.github.io/essentials.github.io/' class='price-btn'> जनपद अयोध्या में अयोध्या में आपके निकट दुकानदारों की विवरण सहित सूची</a></center></h2></div></div></div><div class='row'>";
+var ht = "<html lang='en'><head><title>आपरेशन होम डिलीवरी/ Operation Home Delivery</title><link = rel=='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel='stylesheet' href='style.css'></head><body><div class='pricing-area'><div class='container'><div class='row'><div class='col-sm-12'><div class='section-header text-center'><center><h2><a href='https://operationhomedeliveryayodhya.github.io/home/' class='price-btn'> जनपद अयोध्या में अयोध्या में आपके निकट दुकानदारों की विवरण सहित सूची</a></center></h2></div></div></div><div class='row'>";
 //alert("<html>><head><title>Essential</title><link = rel==‘stylesheet’ href=‘https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css’><link rel=‘stylesheet’ href=‘style.css’></head><body><div class=‘pricing-area’><div class=‘container’><div class=‘row’><div class=‘col-sm-12’><div class=‘section-header text-center’><h2>Our Awsome PRice</h2></div></div></div><div class=‘row’>");
 
 
@@ -54,7 +54,7 @@ if(vill == 0 & ps ==0)
 
 for (var i=0; i<2336; i++)
 {//document.write("<tr><td>"+arr[i][1]+"</td><td>"+arr[i][3]+"</td><td>"+arr[i][4]+"</td><td>"+arr[i][5]+"</td><td>"+arr[i][6]+"</td><td>"+arr[i][7]+"</td><td>"+arr[i][8]+"</td><td>"+arr[i][9]+"</td><td>");
-var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://smartcellayodhya.github.io/essentials.github.io/' class='price-btn'>SEARCH AGAIN</a></div></div>";
+var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://operationhomedeliveryayodhya.github.io/home/' class='price-btn'>SEARCH AGAIN</a></div></div>";
 
 document.write(bo);
 }

@@ -72,7 +72,7 @@ var c1 = ps.localeCompare(arr[i][7]);
 var c2 = vill.localeCompare(arr[i][8]);
 if(c1 == 0 & c2 == 0)
 {//document.write("<tr><td>"+arr[i][1]+"</td><td>"+arr[i][3]+"</td><td>"+arr[i][4]+"</td><td>"+arr[i][5]+"</td><td>"+arr[i][6]+"</td><td>"+arr[i][7]+"</td><td>"+arr[i][8]+"</td><td>"+arr[i][9]+"</td><td>");
-var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://smartcellayodhya.github.io/essentials.github.io/' class='price-btn'>SEARCH AGAIN</a></div></div>";
+var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://operationhomedeliveryayodhya.github.io/home/' class='price-btn'>SEARCH AGAIN</a></div></div>";
 document.write(bo);
 }
 }
@@ -89,7 +89,7 @@ for (var i=0; i<2336; i++)
 var c2 = vill.localeCompare(arr[i][8]);
 if(c2 == 0)
 {//document.write("<tr><td><b>"+arr[i][1]+"</b></td><td>"+arr[i][3]+"</td><td>"+arr[i][4]+"</td><td>"+arr[i][5]+"</td><td>"+arr[i][6]+"</td><td>"+arr[i][7]+"</td><td>"+arr[i][8]+"</td><td>"+arr[i][9]+"</td><td>");
-var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://smartcellayodhya.github.io/essentials.github.io/' class='price-btn'>SEARCH AGAIN</a></div></div>";
+var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://operationhomedeliveryayodhya.github.io/home/' class='price-btn'>SEARCH AGAIN</a></div></div>";
 document.write(bo);}
 }
 }
@@ -102,7 +102,7 @@ for (var i=0; i<2336; i++)
 var c1 = ps.localeCompare(arr[i][7]);
 if(c1 == 0)
 {//document.write("<tr><td>"+arr[i][1]+"</td><td>"+arr[i][3]+"</td><td>"+arr[i][4]+"</td><td>"+arr[i][5]+"</td><td>"+arr[i][6]+"</td><td>"+arr[i][7]+"</td><td>"+arr[i][8]+"</td><td>"+arr[i][9]+"</td><td>");
-var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://smartcellayodhya.github.io/essentials.github.io/' class='price-btn'>SEARCH AGAIN</a></div></div>";
+var bo = "<div class='col-md-3 col-sm-6'><div class='single-pricing'><div class='deal-area'><span class='deal-price'>SMART CELL</span><h3 class='title'>AYODHYA[UP]</h3></div><ul class='content-area'><li>नाम दुकानदार : "+ arr[i][5]+"</li><li>दुकानदार का मो.नं. : "+arr[i][6]+"</li><li>उपलब्ध सामग्री: "+arr[i][4]+"</li><li>अन्तर्गत थाना: "+arr[i][7]+"</li><li>निकट ग्राम/ मोहल्ला : "+ arr[i][8]+"</li><li>गली/सडक: "+arr[i][9]+"</li><li>सम्बन्धित पुलिस कर्मी : "+arr[i][1]+"</li><li>मो.नं. पुलिस कर्मी : "+arr[i][3]+"</li></ul><a href='https://operationhomedeliveryayodhya.github.io/home/' class='price-btn'>SEARCH AGAIN</a></div></div>";
 document.write(bo);}
 }
 }
